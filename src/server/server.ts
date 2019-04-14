@@ -66,7 +66,7 @@ export class Server {
                     console.log('GET error:', error.message);
                 }
                 if( data ) {
-                    res.json( JSON.parse(data));
+                    res.json( data );
                 }
             });
         });

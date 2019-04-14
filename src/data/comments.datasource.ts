@@ -95,13 +95,8 @@ export class CommentsDatasource {
     }
 
     private getComments_MOCK( callback:ICallback) { 
-        fs.readFile(this.mockFilePath, (err:Error, data:any) => {
-            if (err) {
-                console.error(err);
-                process.exit(1);
-            }
-            callback(err, data);
-        });
+        let err:Error = new Error();
+        callback(err, this.comments);
     };
 
     private postComment_MOCK( req:Request, callback:ICallback ) {
