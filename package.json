@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc -p .  &&  npm run copyjson",
     "start": "node dist",
-    "build-start": "npm run build && node ./dist/index",    
+    "build-start": "npm run build && node ./dist/index",
     "copyjson": "copyfiles -u 1 -V src/data/*.json dist/"
   },
   "author": "Gavin Mogensen",
