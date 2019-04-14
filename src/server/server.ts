@@ -78,7 +78,7 @@ export class Server {
                     console.log('POST error:', error.message);
                 }
                 if( data ) {
-                    res.json( JSON.parse(data));
+                    res.json( data );
                 }
 
             })
@@ -91,7 +91,7 @@ export class Server {
                     console.log('PUT error:', error.message);
                 }
                 if( data ) {
-                    res.json( JSON.parse(data));
+                    res.json( data );
                 }
 
             })
@@ -104,7 +104,7 @@ export class Server {
                     console.log('DELETE error:', error.message);
                 }
                 if( data ) {
-                    res.json( JSON.parse(data));
+                    res.json( data );
                 }
             })
         });

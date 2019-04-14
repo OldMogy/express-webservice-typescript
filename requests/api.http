@@ -1,0 +1,26 @@
+
+###
+
+GET http://localhost:4647/api/comments
+
+
+###
+
+POST http://localhost:4647/api/comments/1471074253479
+Content-Type: application/json
+
+{
+    "author": "Gavin",
+    "text": "Fake REST Client POST"
+}
+
+
+### PUT HITS URL
+PUT http://localhost:4647/api/comments/1471074137707
+Content-Type: application/json
+
+{
+    "author":"Gavin",
+    "text":"This is the comment - That is going to be updated"
+}
+ 
