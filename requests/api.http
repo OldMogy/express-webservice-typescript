@@ -1,26 +1,29 @@
+#
+# Input file for the VSCode Extension 'REST Client' by Huachao Mao
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client&ssr=false
+# Allows really simple method for testing of end-points
 
-###
-
+### Works
 GET http://localhost:4647/api/comments
 
-
-###
-
-POST http://localhost:4647/api/comments/1471074253479
+### Works
+POST http://localhost:4647/api/comments
 Content-Type: application/json
 
 {
     "author": "Gavin",
-    "text": "Fake REST Client POST"
+    "text": "Fake REST Client POST with GUID data >>> {{$guid}}"
 }
 
-
-### PUT HITS URL
-PUT http://localhost:4647/api/comments/1471074137707
+### Works
+PUT http://localhost:4647/api/comments/1471074253479
 Content-Type: application/json
 
 {
     "author":"Gavin",
-    "text":"This is the comment - That is going to be updated"
+    "text":"This is the comment - That is going to be updated with GUID {{$guid}}"
 }
- 
+
+### Works
+DELETE http://localhost:4647/api/comments/1471074385294
+Content-Type: application/json 
