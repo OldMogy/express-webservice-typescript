@@ -5,7 +5,6 @@
 // https://github.com/christiannwamba/scotch-ng2-http
 //
 // Gavin Mogensen
-// Hitachi Rail STS (c) 2019
 ////////////////////////////////////////////////////////
 
 import path from 'path';
