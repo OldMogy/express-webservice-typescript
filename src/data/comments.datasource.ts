@@ -26,9 +26,10 @@ export class CommentsDatasource {
 
     constructor(useMockData?:boolean) {
         if (useMockData) {
+            this.mockFilePath = path.join(__dirname, 'comments.mock-data.json');
+            console.log("opening MOCK data file @", this.mockFilePath);
             this.DEBUG = useMockData;
             this.loadMockComments();
-            this.mockFilePath = path.join(__dirname, 'comments.mock-data.json');
         }
     }
 
