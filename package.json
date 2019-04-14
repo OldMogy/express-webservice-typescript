@@ -1,0 +1,24 @@
+{
+  "name": "example-express-webservice",
+  "version": "1.0.0",
+  "description": "Template for Express based webservices - Typescript",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p .  &&  npm run copyjson",
+    "start": "node dist",
+    "build-start": "npm run build && node ./dist/index",    
+    "copyjson": "copyfiles -u 1 -V src/data/*.json dist/"
+  },
+  "author": "Gavin Mogensen",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.4",
+    "@types/express": "^4.16.1",
+    "copyfiles": "^2.1.0",
+    "typescript": "^3.4.3"
+  }
+}
